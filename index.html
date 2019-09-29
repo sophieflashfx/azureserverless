@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Add Stateless</title>
+    <script src="./Add Stateless_files/jquery.min.js.download"></script>
+ <script type="text/javascript">
+    function SendData() {
+
+    var xhttp = new XMLHttpRequest();
+    var data = new Object();
+    data.cmd = document.getElementById("cmd").value;
+    data.username = document.getElementById("username").value;
+    data.value = document.getElementById("value").value;
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    document.getElementById("message").innerHTML = this.responseText;
+    }
+    };
+    xhttp.open("POST", "<url to http trigger function>", true);
+    xhttp.send(JSON.stringify(data));
+    }
+</script>
+</head>
+<body>
+    <div class="text-center">
+        <p>User Name</p>
+        <input id="username">
+        <br>
+        <p>CMD</p>
+        <input id="cmd">
+        <br>
+        <p>Value</p>
+        <input id="value">
+        <br>
+        <button onclick="SendData()">submit</button>
+        <label id="message" style="color:green"></label>
+    </div>
+
+
+</body></html>

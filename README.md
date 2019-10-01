@@ -1,7 +1,7 @@
 # azureserverless
 This code is a demo of a single page web app that uses serverless function and static web page served directly from an azure blob. 
 
-The web app adds numbers entered. Its purpose is to demonstrate stateless coding as required by serveless functions. How it works is as follows.
+The web app adds numbers entered. Its purpose is to demonstrate stateless coding as required by serveless functions. How it works is as follows. Step by step instruction to follow are given in the "Function App.pdf"
 1. index.html: This web page is a static page that is served directly from an azure blob. The page provides an interface to post 3 values (username, cmd, value) to a serveless function (datareceiver.csx http triggered)
 2. datareceiver.csx: This file holds the code for accepting http requests. It expect 3 values username, cmd and value. The cmd can take one of 3 value. 
    1. entry: This cmd value indicates that the value is to be saved in an azure table.

@@ -19,16 +19,16 @@ The steps to creating the app using this code is given below. All steps are carr
 
 4. Add output binding to an azure table and queue following the steps on this link https://docs.microsoft.com/en-us/azure/azure-functions/functions-integrate-storage-queue-output-binding?tabs=csharp.
 
-5. Add input binding to an azure table following the instruction on this link :https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings.
+5. Add input binding to an azure table following the instruction on this link: https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings.
 
 6. Create an AZURE Queue triggered function: https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-storage-queue-triggered-function.
 
 7.Replace the code in the queue triggered function with the code in queueprocessor.csx.
 
-8.Create a static website via an html pages served directly from an azure blob by following the intructions in this page https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website
+8.Create a static website via an html pages served directly from an azure blob by following the intructions in this page https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website.
 
 9. Use the index.html page provided for the static website index page.
 
-10 request the index.html page and make an entry by providing value for username,cmd and value
+10. Request the index.html page and make an entry by providing value for username,cmd and value.
 
   
